@@ -5,10 +5,9 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const app = express();
-const port = 3000; // You can use any port you prefer
+const port = 3000; 
 
-// MongoDB connection URI (replace 'YOUR_MONGODB_CONNECTION_URI' with your actual MongoDB connection URI)
-const dbURI = 'YOUR_MONGODB_CONNECTION_URI';
+const dbURI = 'mongodb://mongodb0.example.com:27017';
 
 // Connect to MongoDB
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
